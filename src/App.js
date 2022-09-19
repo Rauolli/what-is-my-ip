@@ -19,7 +19,6 @@ function App() {
 
 console.log("URL: " + url);
  
-
   return (
     <div className="App">
       <h1>Hello, what is your IP?</h1>
