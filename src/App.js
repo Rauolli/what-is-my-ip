@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react';
 function App() {
   const [ip, setIp] = useState('');
   const [loc, setLocation] = useState([]);
-  const myApiKey = 'at_UIAaG3MYFlg3BuDy98PiYsckqywSk'; //process.env.REACT_APP_IPIFY_API_KEY;
+  const myApiKey = process.env.REACT_APP_IPIFY_API_KEY; 
   const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${myApiKey}`;
 
   useEffect(()=>{
@@ -17,7 +17,7 @@ function App() {
       .catch(err => console.error(err)); 
   }, []);
 
-  //console.log("Loc: " + loc);
+console.log("URL: " + url);
  
   return (
     <div className="App">
