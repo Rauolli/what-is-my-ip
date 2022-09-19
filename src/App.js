@@ -17,7 +17,7 @@ function App() {
       .catch(err => console.error(err)); 
   }, []);
 
-  //console.log("Loc: " + loc);
+console.log("URL: " + url);
  
 
   return (
